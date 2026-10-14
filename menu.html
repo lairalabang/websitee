@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Coffee & More - Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    .item-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid var(--border-light);
+    }
+    .item-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .item-card h3 { font-family: var(--font-serif); font-size: 18px; margin-bottom: 5px; }
+    .item-card p { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+    .item-card .price { font-weight: 700; color: var(--btn-brown); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <h1>CAFÉ</h1>
+      <span>COFFEE & MORE</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="menu.html" class="active">MENU</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <a href="menu.html" class="btn-primary">ORDER ONLINE</a>
+  </header>
+
+  <div class="page-header-banner">
+    <span class="section-tag">Handcrafted</span>
+    <h1>Full Menu</h1>
+  </div>
+
+  <div class="container">
+    <div class="menu-grid">
+      <div class="item-card">
+        <img src="image/menu4.jpg" alt="Espresso">
+        <h3>Classic Espresso</h3>
+        <p>Rich, bold double shot of Arabica espresso.</p>
+        <span class="price">$3.00</span>
+      </div>
+      <div class="item-card">
+        <img src="image/menu.jpg" alt="Iced Latte">
+        <h3>Iced Caramel Latte</h3>
+        <p>Espresso, milk, and sweet caramel over ice.</p>
+        <span class="price">$4.50</span>
+      </div>
+      <div class="item-card">
+        <img src="image/croissants-4.jpg" alt="Butter Croissant">
+        <h3>Butter Croissant</h3>
+        <p>Flaky, golden baked pastry made daily.</p>
+        <span class="price">$3.25</span>
+      </div>
+      <div class="item-card">
+        <img src="image/choco.jpg" alt="Chocolate Cake">
+        <h3>Dark Chocolate Cake</h3>
+        <p>Decadent layer cake with cocoa ganache.</p>
+        <span class="price">$4.50</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-bottom">
+    <p>&copy; 2024 Café. All Rights Reserved.</p>
+    <div><a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></div>
+  </footer>
+
+</body>
+</html>
